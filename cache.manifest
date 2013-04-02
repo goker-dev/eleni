@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+# Version: 1.0.0
+
+CACHE:
+index.html
+default.css
+default.js
+zepto.min.js
+zepto.onshake.js
+images/splash.png
+images/loading.png
+images/background.png
+fonts/habibi.woff
+
+# touch icons
+images/touch-icon-iphone.png
+images/touch-icon-ipad.png
+images/touch-icon-iphone-retina.png
+images/touch-icon-ipad-retina.png

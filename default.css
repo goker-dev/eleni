@@ -1,0 +1,170 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Habibi';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Habibi'), local('Habibi-Regular'), url(fonts/habibi.woff) format('woff');
+}
+/* CSS Document */
+* {
+    -moz-box-sizing: border-box; /* ff2 */
+    -ms-box-sizing: border-box; /* ie8 */
+    -webkit-box-sizing: border-box; /* safari3 */
+    box-sizing: border-box; /* css3 rec */
+    -webkit-appearance: none;
+    outline: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    -webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+    -webkit-touch-callout: none; /* disable callout, image save panel */
+    -webkit-user-select: none; /* disable cut copy paste */
+    -webkit-text-size-adjust: none; 
+    -webkit-highlight: none;
+    color: #bbb;
+    background: #ffe url('images/background.png');
+}
+body, td {
+    font: 36px/1.5 "Habibi", sans-serif;
+}
+h1 {
+    font-size: 24px;
+}
+#splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 100000;
+    background: url('images/splash.png') center center no-repeat;
+    background-size: contain;
+}
+#info {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-size: 16px;
+    text-align: justify;
+    z-index: 10000;
+    color: #3f3d36;
+    opacity:0;
+}
+#answer {
+    display: none;
+}
+#answer, #text, #loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+#text {
+    top: 10px;
+    left: 10px;
+    vertical-align: middle; 
+    color: #3f3d36;
+    font-size: 36px;
+    text-align: center;
+    z-index: 1000;
+    border: 3px solid #3f3d36;
+    opacity: 0;
+}
+
+
+a.x {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 240px;
+    color: #eee;
+    background: rgba(0,0,0,.95);
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#loading {
+    background: url('images/loading.png') center center no-repeat;
+    background-size: contain;
+    opacity: 0;
+}
+
+
+.fade {
+    -webkit-animation: fade 3s;
+}
+.fadeIn {
+    -webkit-animation: fade 1s;
+}
+.fadeOut {
+    -webkit-animation: fade 1s;
+}
+.blink {
+    -webkit-animation: blink 3s infinite alternate;
+}
+
+/* Defines the animation keyframes */
+@-webkit-keyframes fade {
+    0% { 
+    opacity: 0;
+}
+25% { 
+    opacity: 1;
+}
+50% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+@-webkit-keyframes fadeIn {
+    from { 
+    opacity: 0;
+}
+to { 
+    opacity: 1;
+}
+}
+@-webkit-keyframes fadeOut {
+    from { 
+    opacity: 1;
+}
+to { 
+    opacity: 0;
+}
+}
+@-webkit-keyframes blink {
+    5% { 
+    opacity: 0;
+}
+15% { 
+    opacity: .6;
+}
+25% {
+    opacity: .3;
+}
+35% {
+    opacity: .8;
+}
+65% {
+    opacity: 0;
+}
+}
+

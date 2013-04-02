@@ -1,10 +1,32 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Eleni</title>
-</head>
-<body>
-HelloWorld!
-</body>
+<html manifest="cache.manifest">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-orientations" content="portrait" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="apple-touch-icon" href="images/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="images/touch-icon-ipad-retina.png" />
+        <link href='default.css' rel='stylesheet' type='text/css' />
+        <title>Eleni</title>
+    </head>
+    <body>
+        <div id="splash"></div>
+        <div id="answer"></div>
+        <div id="info">
+            <h1>eleni</h1>
+            <p>
+                Eleni, sorulan sorulara rastgele cevaplar veren bilge bir kadındı. Verdiği rastgele cevaplar insanların zihinlerini aydınlatarak çıkmaza düştükleri zamanlarda doğru yolu bulmalarına yardımcı olurdu.
+            </p>
+            <p>Bu uygulama Eleni'nin felsefesinden yola çıkarak sorularınıza rastgele cevaplar verip, seçimlerinizi netleştirmenize yardımcı olmak için tasarlanmıştır. Cevaptan tatmin olmadığınız zaman elefonunuzu sallayarak ya da ekrana dokunarak Eleni'nin size yeni bir cevap vermesini sağlayabilirsiniz.</p>
+            <a class="x">Cevap almak için tıklayın.</a>
+        </div>
+        <script src="zepto.min.js"></script>	
+        <script src="zepto.onshake.js"></script>
+        <script src="default.js"></script>
+    </body>
 </html>
